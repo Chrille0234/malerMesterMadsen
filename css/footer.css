@@ -1,0 +1,33 @@
+footer{
+    display: flex;
+    flex-direction: row;
+
+    justify-content: space-between;
+    align-items: center;
+
+    background-color: var(--color-grey);
+    font-family: var(--synonym);
+}
+footer ul{
+    list-style: none;
+    color: var(--color-darkblue);
+    width: 25%;
+    margin: 40px;
+}
+.footerBold{
+    font-weight: bold;
+    margin-bottom: 1rem;
+}
+@media screen and (max-width: 900px) {
+    footer{
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        grid-template-rows: 1fr 1fr;
+
+        justify-items: center;
+        align-items: center;
+    }
+    footer ul{
+        width: 75%;
+    }
+}

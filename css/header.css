@@ -1,0 +1,84 @@
+.header{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    
+    background-color: var(--color-white);
+    box-shadow: 0 0 10px 1px rgb(168, 167, 167);
+
+    font-family: 'Amulya', sans-serif;
+}
+.logo{
+    height: 70px;
+    aspect-ratio: 1 / 1;
+}
+.header ul{
+    display: flex;
+    align-items: center;
+
+    list-style: none;
+    gap: 4rem;
+    z-index: 9999;
+}
+label, input{display: none;}
+
+.header ul a{
+    color: var(--color-darkblue);
+    text-decoration: none;
+    font-weight: bold;
+}
+.header ul a:hover{
+    color: var(--color-yellow)
+}
+.header ul button{
+    color: var(--color-white);
+    font-size: 1rem;
+    font-weight: bold;
+
+
+    background-color: var(--color-yellow);
+    border: 0;
+    border-radius: 5px;
+    
+    margin-inline: 1.5rem;
+    padding: 1rem;
+}
+.header ul button:hover{
+    background-color: var(--color-darkblue)
+}
+
+/* Siden begynder at se grim ud efter 950px */
+/* responsive delen */
+@media screen and (max-width: 950px) {
+    .top-nav ul{
+        background-color: var(--color-grey);
+        display: none;
+    }
+    .top-nav label{
+        font-size: 2rem;
+        margin-inline: 1rem; 
+
+        display: flex;
+        justify-content: right; 
+    }
+    .top-nav input[type="checkbox"]:checked ~ ul{
+        display: block;
+        position: absolute;
+        right: 5px;
+
+        text-align: center;
+
+        padding: 0.5rem 0.5rem;
+    }
+    .top-nav ul li, .top-nav button{
+        line-height: 3rem;
+        font-size: 1.3rem;
+        padding: 0.3rem;
+        margin: 5px 10px;
+
+        box-shadow: 2px 2px 10px gray;
+    }
+    .top-nav ul li:last-of-type {
+        box-shadow: none;
+    }
+}

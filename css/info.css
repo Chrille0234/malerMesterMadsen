@@ -1,0 +1,42 @@
+.info{
+    height: 60vh;
+    width: 100%;
+
+    color: var(--color-darkblue);
+    text-align: center;
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 2em;
+
+    font-family: var(--synonym);
+}
+.info h2{
+    font-size: clamp(1.5rem, 10vw, 3rem);
+}
+.info h3{
+    color: var(--color-yellow);
+    text-transform: uppercase;
+}
+.info ul{
+    list-style: none;
+}
+.info ul, .info h3, .info h2, .info p{
+    width: 50%;
+}
+
+.info.blue{
+    background-color: var(--color-darkblue);
+    color: var(--color-white);
+}
+.info .phoneNumber{
+    font-size: clamp(1.5rem, 10vw, 3.2rem);
+    font-weight: lighter;
+}
+@media screen and (max-width: 650px){
+    .info ul, .info h3, .info h2, .info p{
+        width: 80%;
+    }
+}

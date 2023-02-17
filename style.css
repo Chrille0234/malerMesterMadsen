@@ -1,0 +1,26 @@
+@import url(css/header.css);
+@import url(css/hero.css);
+@import url(css/priceCards.css);
+@import url(css/info.css);
+@import url(css/reviewCards.css);
+@import url(css/footer.css);
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+
+
+}
+:root{
+    --color-darkblue: #305c71;
+    --color-yellow: #f6ca50;
+    --color-grey: #e5e7eb;
+    --color-white: #f8f9fb;
+
+    --amulya: 'Amulya', sans-serif;
+    --synonym: 'Synonym', sans-serif;
+}
+h1, h2, h3, h4, h5{
+    font-family: var(--amulya) !important;
+}
